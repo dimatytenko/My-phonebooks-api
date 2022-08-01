@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=production node -r dotenv/config ./server.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon -r dotenv/config ./server.js",
+    "start": "node -r dotenv/config ./server.js",
+    "start:dev": "nodemon -r dotenv/config ./server.js",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js",
     "test": "cross-env NODE_ENV=test jest --setupFiles=dotenv/config ",
